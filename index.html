@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <img src="/assets/alura.svg" alt="alura logo" class="svg-header invisible"/>
+    <main class="content">
+      <div class="img-container">
+        <img src="/assets/alura.svg" alt="alura logo" />
+      </div>
+      <div class="container">
+        <div class="block-center">
+          <textarea class="text-box" placeholder="Digite seu Texto"></textarea>
+          <div class="warning">
+            <img src="assets/info.svg" />
+            <p>Somente letras minúsculas e sem acento</p>
+          </div>
+
+          <div class="bt-container">
+            <button class="bt-encript" onclick="writeTextEncrypted()">Criptografar</button>
+            <button class="bt-decript" onclick="writeTextDecrypted()">Descriptografar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="show-text">
+        <div class="show-result">
+          <div class="svg-center">
+            <img src="assets/girl.svg" alt="garota com lupa" />
+          </div>
+
+          <div class="info">
+            <p class="title">Nenhuma mensagem encontrada</p>
+            <p class="paragraph">
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </div>
+        </div>
+        <div class="text-result-container invisible">
+            <textarea class="text-result">
+            </textarea>
+              <button class="bt-copy" onclick="copyText()">Copiar</button>
+        </div>
+       
+      </div>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
